@@ -13,6 +13,14 @@ namespace Librarymanagement
         int MembershipID;
         public int BooksIssued;
 
+        //property
+        public string MembershipDuration
+        {
+            get { return MembershipDuration; }      //get method
+            set { MembershipDuration = "4 months"; }  //set method
+
+        }
+
         public Member(string name, int MembershipID, int BooksIssued)
         {
             name = name;
