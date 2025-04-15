@@ -8,15 +8,18 @@ namespace Librarymanagement
 {
     class Book
     {
-        public void Details()
-        {
+        
+
+
+        
         public string Title;
         public string Author;
-        public bool IsAvailable { get; internal set; }
         
-        }
-           
-        
+
+       public bool IsAvailable { get; internal set; } //day2task
+
+
+
         public static int Total()
         {
             // static method 
