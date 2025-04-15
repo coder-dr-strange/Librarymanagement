@@ -10,11 +10,12 @@ namespace Librarymanagement
     {
         public void Details()
         {
-            string Title;
-            string Author;
-            bool IsAvailable;
-
+        public string Title;
+        public string Author;
+        public bool IsAvailable { get; internal set; }
+        
         }
+           
         
         public static int Total()
         {

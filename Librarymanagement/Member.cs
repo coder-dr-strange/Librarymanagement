@@ -13,14 +13,20 @@ namespace Librarymanagement
         int MembershipID;
         public int BooksIssued;
 
-        //property
-        public string MembershipDuration
+
+        private string _MembershipDuration;  //private backing field day2task
+
+                                              //read only property day2task
+        private string MembershipDuration
         {
             get { return MembershipDuration; }      //get method
             set { MembershipDuration = "4 months"; }  //set method
 
         }
-
+                                               
+                                           //added new properties datetime joineddate day2task
+        public int DateTime { get; set; }
+        public int JoinedDate { get; set; }
         public Member(string name, int MembershipID, int BooksIssued)
         {
             name = name;
