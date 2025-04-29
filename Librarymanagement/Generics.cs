@@ -21,5 +21,13 @@ namespace Librarymanagement
         {
             Console.WriteLine($"All values are {value1},{value2},{value3}");
         }
+        public void Showarray<T>(int[] arr)
+        {
+            Console.WriteLine("Values of array are ");
+            for (int i = 0; i< arr.Length; i++)
+            {
+                Console.WriteLine($"{arr[i]}");
+            }
+        }
     }
 }

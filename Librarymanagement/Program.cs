@@ -50,6 +50,10 @@ namespace Librarymanagement
             gen.ShowList();
             gen2.ShowList();
             gen3.ShowList();
+
+            int[] array = new int[4] { 333, 333, 3, 333333 };
+            gen.Showarray<int>(array);
+
         }
     }
 }
