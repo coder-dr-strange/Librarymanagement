@@ -6,15 +6,20 @@ namespace Librarymanagement
 {
     public class Generics<T>
     {
-       public  T value;
+       public  T value1;
+        public T value2;
+        public T value3;
 
         public Generics(T value1,T value2,T value3)
         {
-            value = value1;
+            this.value1 = value1;
+            this.value2 = value2;
+            this.value3 = value3;
+ 
         }
-       public void ShowList()
+        public void ShowList()
         {
-            Console.WriteLine($"First values are {value}");
+            Console.WriteLine($"All values are {value1},{value2},{value3}");
         }
     }
 }
