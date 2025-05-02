@@ -7,10 +7,10 @@ namespace Librarymanagement
 {
     public class ArrayExamples
     {
-       public int[] integers = { 11, 22, 33, 44, 55 };
+        public int[] integers = { 11, 22, 33, 44, 55 };
         public void ArrayPrint()
         {
-            Console.WriteLine("1. Write an array of integers and print them : " + integers[0] + "," + integers[1] +"," + integers[2] +"," + integers[3] + "," + integers[4]);
+            /* Console.WriteLine("1. Write an array of integers and print them : " + integers[0] + "," + integers[1] +"," + integers[2] +"," + integers[3] + "," + integers[4]);
             int max = integers.Max();
             int min = integers.Min();
             Console.WriteLine("2. Given an array, find the maximum and minimum values:" + "Max value is "+ integers.Max() + " Min value is : " + integers.Min() );
@@ -47,10 +47,42 @@ namespace Librarymanagement
             Console.WriteLine("10. Odd numbers are : " + string.Join(",",OddValues));
 
              Array.Reverse(integers);
-            Console.WriteLine("11. Reverse values are : " + string.Join(",", integers));
+            Console.WriteLine("11. Reverse values are : " + string.Join(",", integers));  */
+
+            int[,] max =
+            {
+                {6,23,21 },
+                { 4,45,32},
+                {69,11,87 }
+            };
+            int x = 32;
+            bool found = true;
+
+            foreach (int value in max)
+            { if (x==32)
+                {
+                    found = true;
+                    break;
+                }
+                Console.WriteLine("Example 1 value of x " + found);
+
+            }
+
+            //Input: mat[][] = [[14, 34, 23, 95, 43, 28]], x = 55
+            int[,] mat = { {14,34,23,95,28} };
+            int X = 55;
+            bool notfound = false;
+            foreach (int value in mat)
+            {
+                if (X != 55)
+                {
+                    notfound = false;
+                    break;
+                }
+            }
+            Console.WriteLine("Example 2 value of X "+notfound);
+
 
         }
-
-
     }
-}
+} 

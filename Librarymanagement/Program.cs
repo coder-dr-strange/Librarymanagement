@@ -20,10 +20,10 @@ namespace Librarymanagement
 
 
 
-            /* ArrayExamples obj = new ArrayExamples();
+             ArrayExamples obj = new ArrayExamples();
              obj.ArrayPrint();
 
-             StringExamples Object = new StringExamples();
+            /* StringExamples Object = new StringExamples();
               Object.Print();
 
              Animal A = new Animal();
@@ -44,7 +44,7 @@ namespace Librarymanagement
              IA.Dance();
              Console.WriteLine(); */
 
-            var gen = new Generics<int>(10,20,30);
+            /* var gen = new Generics<int>(10,20,30);
             var gen2 = new Generics<string>("dance", "play", "cry");
             var gen3 = new Generics<double>(2.2, 3.65, 9.59);
             gen.ShowList();
@@ -53,6 +53,15 @@ namespace Librarymanagement
 
             int[] array = new int[4] { 333, 333, 3, 333333 };
             gen.Showarray<int>(array);
+
+            int num1 = 123; int num2 = 321;
+            gen.SwapValues(ref num1, ref num2);
+            Console.WriteLine($"Value of swap {num1}, {num2}");
+            string str1 = "incomingse"; string str2 = "outgoingtak";
+            gen2.SwapValues(ref str1, ref str2);
+            Console.WriteLine($"Values of string swap {str1} , {str2}"); */
+
+            
 
         }
     }

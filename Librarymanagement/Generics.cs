@@ -6,15 +6,15 @@ namespace Librarymanagement
 {
     public class Generics<T>
     {
-       public  T value1;
+        public  T value1;
         public T value2;
         public T value3;
 
         public Generics(T value1,T value2,T value3)
         {
-            this.value1 = value1;
-            this.value2 = value2;
-            this.value3 = value3;
+            value1 = value1;
+            value2 = value2;
+            value3 = value3;
  
         }
         public void ShowList()
@@ -26,8 +26,16 @@ namespace Librarymanagement
             Console.WriteLine("Values of array are ");
             for (int i = 0; i< arr.Length; i++)
             {
-                Console.WriteLine($"{arr[i]}");
+                Console.WriteLine($"{arr[i]}"); 
             }
+        }
+
+        public void SwapValues<T>(ref T a, ref T b)
+        {
+            T tingi = a;
+            a = b;
+            b = tingi;
+            Console.WriteLine();
         }
     }
 }
