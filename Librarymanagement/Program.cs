@@ -20,8 +20,12 @@ namespace Librarymanagement
 
 
 
-             ArrayExamples obj = new ArrayExamples();
-             obj.ArrayPrint();
+             /*    ArrayExamples obj = new ArrayExamples();
+             obj.ArrayPrint(); */
+
+
+            ArrayEx2 objectt = new ArrayEx2();
+            objectt.Printing();
 
             /* StringExamples Object = new StringExamples();
               Object.Print();

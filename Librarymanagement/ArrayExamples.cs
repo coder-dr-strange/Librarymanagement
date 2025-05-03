@@ -122,7 +122,9 @@ namespace Librarymanagement
                 Console.WriteLine($"Repeatatn of 3 is {rep3} times");
             }
 
-
+            int[] ARR = new int[] { 1, 2, 3, 4, 5 };
+            Array.Reverse(ARR);
+            Console.WriteLine("Value reversed " +string.Join(","+ARR));
 
         } 
     }
