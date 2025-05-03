@@ -5,6 +5,8 @@ namespace Librarymanagement
 {
     class Program
     {
+        private static int[] array;
+
         static void Main(string[]args)
         {
             /*
@@ -26,6 +28,14 @@ namespace Librarymanagement
 
             ArrayEx2 objectt = new ArrayEx2();
             objectt.Printing();
+            //objectt.changeelement(array,4,44);
+
+            LINQ linq= new LINQ();
+            linq.PRINT();
+
+           // structure.Typeit();
+
+
 
             /* StringExamples Object = new StringExamples();
               Object.Print();
@@ -65,7 +75,7 @@ namespace Librarymanagement
             gen2.SwapValues(ref str1, ref str2);
             Console.WriteLine($"Values of string swap {str1} , {str2}"); */
 
-            
+
 
         }
     }

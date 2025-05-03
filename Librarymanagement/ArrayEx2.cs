@@ -1,15 +1,42 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace Librarymanagement
 {
     class ArrayEx2
     {
-       internal int[] array = new int[] { 3,6,5,6,4,7,8 };
+       public int[] array = new int[] { 3,6,5,6,4,7,8 };
+
+        //to change an element in array 
+        //writing logic in method
+        public void changeelement(int[] e, int location, int value)
+        {
+            {
+                for (int i = 0; i > e.Length; i++)
+                {
+                    if (i == location)
+                    {
+                        e[location] = value;
+                    }
+                }
+            }
+        }
+       //creating method to print the created logic now
+                
+         public void printthis(int[]array)
+        {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i] + ",");
+            }
+        }
+            
+        
 
         public void Printing()
-            {
+        { 
 
             foreach (int value in array)
             {
@@ -28,21 +55,6 @@ namespace Librarymanagement
                     return;
                 }
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             int[] ARR = new int[] { 1, 2, 3, 4, 5 };
             Array.Reverse(ARR);
